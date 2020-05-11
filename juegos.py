@@ -1,3 +1,10 @@
+'''1)Como estructura de datos use un diccionario de diccionario ya que su forma de acceso es mas ordenada y legible 
+   a la hora de usarlo, propongo una clave y le asigno valores. En definitiva la estructura accedo al elemento bajo 
+   su nombre clave y ahi podre acceder a sus datos.
+   2)Como formato de archivo elegi uno de texto porque la estructura coincide con un formato que permite json, 
+   clave-valor, además de que no se específico desde que aplicación iban a acceder al archivo, json es independiente 
+   del lenguaje y/o tecnología que este utilizando'''
+
 import hangman
 import json
 import os
