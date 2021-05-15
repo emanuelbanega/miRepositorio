@@ -3,7 +3,7 @@ const pasajeroSchema = new Schema({
   nombre: String,
   apellido: String,
   dni: Number,
-  email: String,
+  mail: String,
   contraseña: String,
   fechaDeNacimiento: String,
   plan: Boolean,
