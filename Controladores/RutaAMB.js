@@ -52,15 +52,15 @@ const borrarRuta = (req, res) => {
 
 const listarRutas = (req, res) => {
   Ruta.find({})
-    .populate("origen", { nombre: 1, provincia: 1, _id: 0 })
-    .populate("destino", { nombre: 1, provincia: 1, _id: 0 })
+    .populate("origen", { nombre: 1, provincia: 1, _id: 1 })
+    .populate("destino", { nombre: 1, provincia: 1, _id: 1 })
     .populate("combi", {
       patente: 1,
       modelo: 1,
       cantidadDeAsientos: 1,
       chofer: 1,
       tipoDeCombi: 1,
-      _id: 0,
+      _id: 1,
     })
     .then((dataRutas) => {
       res.json(dataRutas);
